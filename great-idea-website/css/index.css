@@ -86,7 +86,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  /* border: 0; */
+
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -131,12 +131,14 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 html,
 body {
   height: 100%;
+  width: 95%;
+  margin: 0 auto;
   font-family: "Titillium Web", sans-serif;
 }
 
@@ -151,3 +153,136 @@ h5 {
 }
 
 /* Your code starts here! */
+.nav {
+  width: 60%;
+  display: inline-block;
+}
+
+.nav a {
+  text-decoration: none;
+  padding: 5%;
+  color: grey;
+  font-size: 1.3rem;
+}
+
+.nav a:first-child {
+  padding-left: 0;
+}
+
+.logo {
+  margin: 1rem 0 0 25%;
+  width: 250px;
+}
+
+header h1 {
+  display: inline-block;
+}
+
+.sub-header-container {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.sub-header {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+}
+.sub-header h1 {
+  font-size: 5rem;
+  margin-bottom: 15%;
+}
+
+.sub-header span {
+  display: block;
+}
+
+.sub-header p {
+  border: 2px solid grey;
+  color: grey;
+  width: 25%;
+  margin: auto;
+  padding: 0.4rem 0;
+}
+
+.img-logo {
+  display: inline-block;
+  margin-left: 20%;
+}
+.img-logo img {
+  width: 500px;
+}
+
+.main-container {
+  /* border: 1px solid red; */
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+
+  margin: 5rem 0;
+  padding-bottom: 5rem;
+}
+
+.main-container h3 {
+  font-size: 1.7rem;
+}
+.main-container p {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.section-features {
+  width: 40%;
+  display: inline-block;
+  margin-right: 25rem;
+  margin-top: 3rem;
+}
+
+.section-about {
+  width: 40%;
+  display: inline-block;
+}
+
+.img-container {
+  margin: 3rem 0;
+}
+
+.img-container .middle-img {
+  width: 100%;
+  height: 20vh;
+}
+
+.section-services {
+  display: inline-block;
+  width: 30%;
+  margin-right: 4%;
+}
+
+.section-product {
+  display: inline-block;
+  width: 30%;
+  margin-right: 4%;
+}
+.section-vision {
+  display: inline-block;
+  width: 30%;
+}
+
+footer h3 {
+  font-size: 1.7rem;
+}
+
+address {
+  width: 250px;
+  font-size: 1.4rem;
+  margin-bottom: 7rem;
+}
+
+.number {
+  display: inline-block;
+  padding: 1.5rem 0;
+}
+
+.copyright-text {
+  text-align: center;
+  margin-bottom: 7rem;
+}
