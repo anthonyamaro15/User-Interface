@@ -153,25 +153,44 @@ h5 {
 }
 
 /* Your code starts here! */
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand|Raleway&display=swap");
+
 .nav {
   width: 60%;
   display: inline-block;
 }
 
+.nav-container {
+  background-color: rgba(83, 135, 195, 0.5);
+  position: fixed;
+  top: 0;
+  left: 5%;
+  right: 5%;
+
+  z-index: 10;
+}
+
 .nav a {
   text-decoration: none;
-  padding: 5%;
+  display: inline-block;
+  padding: 2% 5%;
   color: grey;
   font-size: 1.3rem;
+  font-family: "Quicksand", sans-serif;
+  transition: all 0.5s ease;
+}
+.nav a:hover {
+  color: white;
 }
 
 .nav a:first-child {
-  padding-left: 0;
+  padding-left: 0.4rem;
 }
 
 .logo {
-  margin: 1rem 0 0 25%;
-  width: 250px;
+  margin: 1rem 0 0 35rem;
+  width: 10%;
 }
 
 header h1 {
@@ -179,8 +198,8 @@ header h1 {
 }
 
 .sub-header-container {
-  width: 80%;
-  margin: 2rem auto;
+  width: 90%;
+  margin: 9rem auto 0;
 }
 
 .sub-header {
@@ -197,29 +216,44 @@ header h1 {
   display: block;
 }
 
-.sub-header p {
+.sub-header button {
+  display: block;
   border: 2px solid grey;
+  font-size: 1.2rem;
   color: grey;
-  width: 25%;
-  margin: auto;
-  padding: 0.4rem 0;
+  margin: -7rem auto 0;
+  padding: 0.4rem 3.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.sub-header button:hover {
+  background: grey;
+  color: white;
 }
 
 .img-logo {
   display: inline-block;
   margin-left: 20%;
 }
-.img-logo img {
+/* .img-logo img {
   width: 500px;
+} */
+.img-logo {
+  width: 500px;
+  height: 500px;
+  background: url("../img/header-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .main-container {
-  /* border: 1px solid red; */
   border-top: 2px solid grey;
   border-bottom: 2px solid grey;
-
   margin: 5rem 0;
   padding-bottom: 5rem;
+  font-family: "Raleway", sans-serif;
 }
 
 .main-container h3 {
@@ -244,12 +278,18 @@ header h1 {
 
 .img-container {
   margin: 3rem 0;
-}
-
-.img-container .middle-img {
   width: 100%;
   height: 20vh;
+  background: url("../img/mid-page-accent.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+/* .img-container .middle-img {
+  width: 100%;
+  height: 20vh;
+} */
 
 .section-services {
   display: inline-block;
@@ -286,3 +326,14 @@ address {
   text-align: center;
   margin-bottom: 7rem;
 }
+/* 
+ Give the navigation a background color and have it be fixed to the top of the page so that it scrolls with the user. You will want to study what z-index means in case you encounter any issues when you scroll.
+
+ Introduce a new font family from google fonts
+
+ Create a new page based off of a navigation item. Create your own layout using box model and display: inline-block;
+
+ Change all the image tags into background images instead
+
+ Research CSS animations and see how you could implement some ideas when hovering over buttons or navigation items
+*/
